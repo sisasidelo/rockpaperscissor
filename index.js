@@ -32,7 +32,7 @@ let divScissor = document.getElementById("scissor");
 			spanAttempt.innerHTML = attempts;}
 		else if(attempts == 3){
 				spanAttempt.innerHTML = attempts;
-				setTimeout(function(){result();},200);
+				setTimeout(function(){result();},100);
 			}
 		}
 	function reset(){
