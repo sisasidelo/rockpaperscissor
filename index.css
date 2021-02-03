@@ -1,0 +1,92 @@
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+body {
+	background-color:#252728;
+	}
+
+
+header {
+	background: white;
+	padding: 28px;
+		}
+header > h1 {
+		color: #252728;
+		text-align: center;
+		font-family: 'Asap', sans-serif;
+	}
+.scoreboard {
+		margin: 20px auto;
+		border: 3px solid white;
+		border-radius: 4px;
+		text-align: center;
+		width: 200px;
+		color: white;
+		font-size: 36px;
+		padding: 15px 20px;
+		font-family:Asap,sans-serif;
+		position: relative;	
+	}
+.badge {
+		background: red;
+		color: white;
+		font-size: 14px;
+		padding: 2px 18px;
+		font-family:Asap,sans-serif;
+	}
+
+#userL {
+		position: absolute;
+		top:25px;
+		left:-30px;
+	}
+#compL	{
+		position: absolute;
+		top: 25px;
+		right: -38px;
+	}
+
+.result {
+
+		font-size:40px;
+		color:white;
+	}
+
+.result > p {
+		text-align:center;
+		font-weight:bold;
+		}
+.choices {
+		margin-top: 45px;
+		text-align:center;
+
+		}
+.choice {
+		display:inline-block;
+		border: 4px solid white;
+		margin: 0 20px;
+		border-radius:50%;
+		padding: 10px;
+		transition: all 0.3s ease;
+	}
+.choice:hover {
+	cursor:pointer;
+	background: grey;
+	}
+#amsg {
+		text-align: center;
+		color: white;
+		font-family: Asap, sans-serif;
+		font-weight:bold;
+		font-size:20px;
+		margin-top: 20px;
+
+	}
+.choice > img {
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		}
