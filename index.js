@@ -1,6 +1,8 @@
 let uScore = 0;
 let cScore = 0;
+let attempts = 0;
 
+let spanAttempt = document.getElementById("atp");
 let spanUscore =  document.getElementById("user-score");
 let spanCscore = document.getElementById("comp-score");
 
@@ -11,9 +13,29 @@ let divRock = document.getElementById("rock");
 let divPaper = document.getElementById("paper");
 let divScissor = document.getElementById("scissor");
 
-let attempts = 0;
-
-
+	function attempt(){
+		attempts++;
+		if (attempts !== 3){spanAttempt.innerHTML = attempts;}
+		else {
+			if(uScore > cScore){
+			alert("Game over: You win");
+			setTimeout(function(){reset();},2000);
+			}else if (uScore < cScore){
+				alert("Game Over: You lose!");
+				}
+			else{alert("Draw");
+				setTimeout(function(){reset();},2000);
+				}
+			}
+		}
+	function reset(){
+		uScore = 0;
+		cScore = 0;
+		attempts = 0;
+		spanUscore.innerHTML = uScore;
+		spanCscore.innerHTML = cScore;
+		spanAttempt.innerHTML = attempts;
+		}
 	function win(){
 		uScore++;
 		spanUscore.innerHTML = uScore;
@@ -64,22 +86,23 @@ let attempts = 0;
 		}
 
 function main(){
-
 divRock.addEventListener('click',function() 
 	{
 		game('r');
+		attempt();
 
 	});
 
 divPaper.addEventListener('click',function()
 	{
 		game('p');
+		attempt();
 
 	});
 divScissor.addEventListener('click',function()
 	{
 		game('s');
-
+		attempt();
 	});
 }
 

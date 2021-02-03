@@ -48,6 +48,12 @@ header > h1 {
 		top: 25px;
 		right: -38px;
 	}
+#atmp	{
+		position:absolute;
+		top:65px;
+		right: 48px;
+
+		}
 
 .result {
 
@@ -72,6 +78,14 @@ header > h1 {
 		padding: 10px;
 		transition: all 0.3s ease;
 	}
+.attempt{
+		display: inline-block;
+		color:white;
+		boder: 2px solid white;
+		padding: 2px;
+		text-align: center;
+
+		}
 .choice:hover {
 	cursor:pointer;
 	background: grey;
