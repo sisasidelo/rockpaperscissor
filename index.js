@@ -15,7 +15,7 @@ let divScissor = document.getElementById("scissor");
 
 	function attempt(){
 		attempts++;
-		if (attempts !== 3){spanAttempt.innerHTML = attempts;}
+		if (attempts =>3){spanAttempt.innerHTML = attempts;}
 		else {
 			if(uScore > cScore){
 			alert("Game over: You win");
