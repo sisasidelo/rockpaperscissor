@@ -83,13 +83,14 @@ let divScissor = document.getElementById("scissor");
 				break;
 			case 'sr':
 				lose();
-				rsltMsg.innerHTML = rs + "You lose!";
+				rsltMsg.innerHTML = rs + " You lose!";
 				break;
 			case 'ps':
 				lose();
-				rsltMsg.innerHTML = sp + "You lose!";
+				rsltMsg.innerHTML = sp + " You lose!";
 				break;
 			case 'rp':
+				rsltMsg.innerHTML = pr + " You lose!";
 				lose();
 				break;
 			case 'rr':
