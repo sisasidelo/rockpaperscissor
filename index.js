@@ -32,7 +32,7 @@ let divScissor = document.getElementById("scissor");
 			spanAttempt.innerHTML = attempts;}
 		else if(attempts == 3){
 				spanAttempt.innerHTML = attempts;
-				setTimeout(function(){result();},100);
+				setTimeout(function(){result();},200);
 			}
 		}
 	function reset(){
@@ -42,6 +42,7 @@ let divScissor = document.getElementById("scissor");
 		spanUscore.innerHTML = uScore;
 		spanCscore.innerHTML = cScore;
 		spanAttempt.innerHTML = attempts;
+		rsltMsg.innerHTML = "Play!";
 		}
 	function win(){
 		uScore++;
